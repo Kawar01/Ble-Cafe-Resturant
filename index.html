@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restuant - menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+
+        <div class="main-logo"><img src="./assets/img/logo.png" alt=""></div>
+      <h1> Ble Cafe & Resturant </h1>
+      <form action="" onsubmit="return false">
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input id="search" type="text" id="myInput" onkeyup="myFunction()" placeholder=" " />
+      </div>
+    </form>
+    </header>
+    <div class="search-bar" id="filter">
+        <button data-filter="breakfast" class="btn active">
+          <img src="./assets/img/english-breakfast.png" data-filter="breakfast" alt="" />breakfast
+        </button>
+     
+        <button data-filter="salad" class="btn">
+            <img src="./assets/img/salad.png" data-filter="salad" alt="" />salad
+        </button>
+        <button data-filter="main" class="btn">
+            <img src="./assets/img/Pizza.png" data-filter="main" alt="" />main
+        </button>
+        
+        <button data-filter="coffe" class="btn ">
+          <img src="./assets/img/Coffee.png" data-filter="coffe" alt=""/> coffee
+        </button>
+        
+        
+        <button data-filter="cake" class="btn ">
+          <img src="./assets/img/Doughnut.png"  data-filter="cake" alt="" />desert
+        </button>
+     
+        <button data-filter="juice" class="btn ">
+          <img src="./assets/img/Drink.png" data-filter="juice" alt="" />drinks  
+        </button>
+<!--      
+        <button data-filter="breakfast" class="btn">
+          <img src="./assets/img/Coca Cola.png" alt="" />نوشابه
+        </button> -->
+     
+    </div>
+    </div>
+    <div class="foodMenu" id="foods">
+      <div class="foodBack salad" data-name="p-1">
+        <div class="food ">
+          <img
+            src="./assets/foods/salad1.jpg"
+            alt=""
+          />
+          <h3> Garden Salad </h3>
+          <p>
+          lettuce, cucumber, beans, carrots, red cabbage, sweet corn, black olives, ranch sauce
+          </p>
+          <span>4,000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack salad" data-name="p-1">
+        <div class="food">
+          <img
+            src="assets/foods/saladchese.jpg"
+            alt=""
+          />
+          <h3>Kurdish Salad </h3>
+          <p>
+         Baby spinach, arugula, Liqvan cheese, walnuts, green apples, cranberries, honey mustard sauce        
+           </p>
+          <span> 5,000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack salad">
+        <div class="food ">
+          <img
+            src="assets/foods/salad.jpg"
+            alt=""
+          />
+          <h3>Avoccado Salad</h3>
+          <p>Avocado, quinoa, white peas, cherry tomatoes, red onion with Arde sauce/p>
+          <span> 6,000 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack salad">
+        <div class="food ">
+          <img
+            src="assets/foods/saladsalmon.jpg"
+            alt=""
+          />
+          <h3> Egg Salad</h3>
+          <p>
+            French spinach, baby spinach, lettuce, sorrel, seeds, pumpkin, seeds, watermelon,
+            Almond, tree, cucumber, strawberry, with oil, olive, lemon juice </p>
+          <span>3,500 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/pizzamargarita.jpg"
+            alt=""
+          />
+          <h3> Margherita Pizza</h3>
+          <p> 220 grams, seasoned white chickpeas, with flour, garlic, extra virgin olive oil, fried pita bread </p>
+          <span> S:6,000 - M:8,000 - L,10,000</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/pizzasteak.jpg"
+            alt=""
+          />
+          <h3>
+            Stake Pizza
+          </h3>
+          <p>
+           220 grams of hot seasoned pinto bean dip, extra virgin olive oil, fried pita bread</p>
+          <span> S:8,000 - M:11,000 - L,15,000 </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/turk.jpg"
+            alt=""
+          />
+          <h3>Turkish coffee </h3>
+          <p>280 ml, Espresso Double Specialty 100% Arabica Colombia, milk</p>
+          <span> 3,000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/caramel.jpg"
+            alt=""
+          />
+          <h3>Mocca</h3>
+          <p>
+           360 ml, double specialty espresso 100% Colombian Arabica, handmade hazelnut chocolate, milk</p>
+          <span> 4,00 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/maciato.jpg"
+            alt=""
+          />
+          <h3>Black Coffee </h3>
+          <p>
+            360 ml, 100% Arabica coffee, machine brewed (high caffeine)</p>
+          <span> 3,500 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/americano.jpg"
+            alt=""
+          />
+          <h3>Americano</h3>
+          <p>
+            220 ml, double specialty espresso 100% Colombian Arabica, boiling water</p>
+          <span> 4,000 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/icedcoffe1.jpg"
+            alt=""
+          />
+          <h3>ice latte</h3>
+          <p>
+           280 ml, double specialty espresso 100% Colombian Arabica, milk, ice</p>
+          <span> 5000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/icedamericano.jpg"
+            alt=""
+          />
+          <h3>Ice Americano</h3>
+          <p>
+           280 ml, double specialty espresso 100% Colombian Arabica, water, ice</p>
+          <span> 5000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack">
+        <div class="food coffe">
+          <img
+            src="assets/foods/hotchocklete.jpg"
+            alt=""
+          />
+          <h3>Matcha latte </h3>
+          <p>
+            340 ml, matcha powder, milk</p>
+          <span> 4000 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/hotchoclete.jpg"
+            alt=""
+          />
+          <h3>Matcheto latte</h3>
+          <p>
+           340 ml, matcha powder, milk</p>
+          <span> 8000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/latte.jpg"
+            alt=""
+          />
+          <h3>Latte</h3>
+          <p>
+          340 ml, milk chocolate powder, milk</p>
+          <span> 6000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food ">
+          <img
+            src="assets/foods/oatmeal.jpg"
+            alt=""
+          />
+          <h3>
+           Oatmeal with fruit</h3>
+          <p>
+           280 ml chilled orange juice, lemon, green apple</p>
+          <span>20,000 IQD</span>
+        </div>
+      </div>
+
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/cheseburger.jpg"
+            alt=""
+          />
+          <h3>Special cheese burger </h3>
+          <p>
+            A special 150g beef burger, cheddar cheese, tomato, pickled cucumber, lettuce, parsley, special sauce, burger bun </p>
+          <span>10,000 IQD  
+                </span>
+        </div>
+      </div>
+  
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/burgermac.jpg"
+            alt=""
+          />
+          <h3>special mushroom burger</h3>
+          <p>
+            A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span> 12,000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack main ">
+        <div class="food">
+          <img
+            src="assets/foods/sandwich.jpg"
+            alt=""
+          />
+          <h3> Salami sandwich</h3>
+          <p>
+            220 grams, seasoned white chickpeas, with flour, garlic, extra virgin olive oil, fried pita bread</p>
+          <span>8000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food">
+          <img
+            src="assets/foods/brsandwich.jpg"
+            alt=""
+          />
+          <h3> Bacon sandwich</h3>
+          <p>
+            220 grams, seasoned white chickpeas, with flour, garlic, extra virgin olive oil, fried pita bread </p>
+          <span> 3000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food">
+          <img
+            src="assets/foods/sandwichbecon.jpg"
+            alt=""
+          />
+          <h3>
+            Bacon sandwich </h3>
+          <p>
+           220 grams, seasoned white chickpeas, with flour, garlic, extra virgin olive oil, fried pita bread</p>
+          <span>  3000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/sandwichcu.jpg"
+            alt=""
+          />
+          <h3>Special mushroom burger</h3>
+          <p>
+           A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span> 6000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack cake">
+        <div class="food ">
+          <img
+            src="assets/foods/chockolatcake.jpg"
+            alt=""
+          />
+          <h3>Choccolate cake</h3>
+          <p>
+             A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun</p>
+          <span>4000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack main">
+        <div class="food ">
+          <img
+            src="assets/foods/chikenburger.jpg"
+            alt=""
+          />
+          <h3>
+            Special mushroom burger  </h3>
+          <p>
+            A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span>7000 IQD
+        </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/fogato.jpg"
+            alt=""
+          />
+          <h3>Ofgato </h3>
+          <p>
+            A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span> 5000 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack juice">
+        <div class="food ">
+          <img
+            src="assets/foods/lemonade.jpg"
+            alt=""
+          />
+          <h3>lemonade </h3>
+          <p>
+         A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun</p>
+          <span>4000 IQD
+        </span>
+        </div>
+      </div>
+      <div class="foodBack cake">
+        <div class="food ">
+          <img
+            src="assets/foods/whitecake.jpg"
+            alt=""
+          />
+          <h3> Cake
+          </h3>
+          <p>
+         A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span>3000 IQD
+        </span>
+        </div>
+      </div>
+      <div class="foodBack coffe">
+        <div class="food ">
+          <img
+            src="assets/foods/spresso.jpg"
+            alt=""
+          />
+          <h3>Espresso </h3>
+          <p>
+           A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span>3000 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food ">
+          <img
+            src="assets/foods/nimro.jpg"
+            alt=""
+          />
+          <h3>Nimro test  </h3>
+          <p>
+           A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun  </p>
+          <span> 10,000 IQD </span>
+        </div>
+      </div>
+      <div class="foodBack juice">
+        <div class="food ">
+          <img
+            src="assets/foods/zanjebil.jpg"
+            alt=""
+          />
+          <h3>Ginger</h3>
+          <p>
+           A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun  </p>
+          <span> 4000 IQD
+        </span>
+        </div>
+      </div>
+      <div class="foodBack juice">
+        <div class="food ">
+          <img
+            src="assets/foods/totfarangi.jpg"
+            alt=""
+          />
+          <h3>Strawberry smoothie </h3>
+          <p>
+           A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span> 4000 IQD</span>
+        </div>
+      </div>
+      <div class="foodBack breakfast">
+        <div class="food ">
+          <img
+            src="assets/foods/pancake.jpg"
+            alt=""
+          />
+          <h3>pancake </h3>
+          <p>
+           A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span> 12,000 IQD </span>
+        </div>
+        
+      </div>
+      <div class="foodBack salad">
+        <div class="food ">
+          <img
+            src="assets/foods/potatosalad1.jpg"
+            alt=""
+          />
+          <h3>Potato  salad
+  </h3>
+          <p>
+A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun </p>
+          <span>8000 IQD </span>
+        </div>
+        
+      </div>      <div class="foodBack mian">
+        <div class="food ">
+          <img
+            src="assets/foods/pastameatbal.jpg"
+            alt=""
+          />
+          <h3>Meat pasta </h3>
+          <p>
+            A special 150g veal burger, mushroom, mozzarella cheese, tomato, pickled cucumber, lettuce, special sauce, onion, parsley, burger bun  </p>
+          <span>10,000 </span>
+        </div>
+        
+      </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+</div>
+<footer>
+    <div class="mainFooter">
+        <div> <i class="fa fa-phone"></i><span> ژمارەی موبایل:٠٧٥٠١٢٣٤٥٦٧ </span></div>
+   
+</div>
+    <div class="mainFooter">
+        <div> <i class="fa fa-map"></i><span>   ناونیشان: بلێ بارزان    </span></div>
+   
+</div>
+    <div class="mainFooter">
+        <div> <i class="fa fa-at"></i><span> ئیمیل:ble.resturant@hotmail.com</span></div>
+
+   
+</div>
+    <!-- <div class="mainFooter">
+        <div> <i class="fa fa-phone"></i><span> شماره تماس:</span></div>
+        <span> ۰۹۱۲۶۱۱۱۲۲</span>
+   
+</div> -->
+
+  <script src="script.js"></script>
+</html>
